@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2021"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

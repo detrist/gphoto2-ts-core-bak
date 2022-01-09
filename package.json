@@ -1,0 +1,54 @@
+{
+  "name": "gphoto2-ts-core",
+  "version": "0.1.0",
+  "description": "GPhoto2 Core library for TypeScript",
+  "private": false,
+  "source": "./src/index.ts",
+  "main": "./lib/cjs/index.js",
+  "typings": "./lib/types/index.d.ts",
+  "exports": {
+    "types": "./lib/types/index.d.ts",
+    "import": "./lib/esm/index.js",
+    "require": "./lib/cjs/index.js",
+    "default": "./lib/esm/index.js"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:cjs": "tsc --build tsconfig.cjs.json",
+    "build:esm": "tsc --build tsconfig.esm.json",
+    "test": "echo \"Warn: no test specified\" && exit 0",
+    "eslint": "eslint \"src/**/*.ts\"",
+    "eslint:fix": "eslint --fix \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detrist/gphoto2-ts-core.git"
+  },
+  
+  "keywords": [],
+  "author": "detrist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/detrist/gphoto2-ts-core/issues"
+  },
+  "homepage": "https://github.com/detrist/gphoto2-ts-core#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "5.8.1",
+    "@typescript-eslint/parser": "5.8.1",
+    "eslint": "8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.4"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/index.d.ts"
+  ],
+  "publishConfig": {
+    "detrist:registry": "https://npm.pkg.github.com"
+  }  
+}
