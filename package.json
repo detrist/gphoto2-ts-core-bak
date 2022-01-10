@@ -1,5 +1,5 @@
 {
-  "name": "gphoto2-ts-core",
+  "name": "@detrist/gphoto2-ts-core",
   "version": "0.1.0",
   "description": "GPhoto2 Core library for TypeScript",
   "private": false,
@@ -49,6 +49,6 @@
     "lib/index.d.ts"
   ],
   "publishConfig": {
-    "detrist:registry": "https://npm.pkg.github.com"
+    "@detrist:registry": "https://npm.pkg.github.com"
   }  
 }
